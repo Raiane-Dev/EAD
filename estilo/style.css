@@ -1,0 +1,1112 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans','Lato','Italianno' sans-serif;
+}
+:root{
+	--rosa-bordo:#efc9b4;
+	--preto:#191919;
+	--preto2:#181818;
+	--branco:#ffffff;
+	--branco-gelo:#efefef;
+	--branco-gelo2:#f0efed;
+	--borda:#5252521a;
+}
+body{
+	max-width:100vw;
+	min-width: 100vw;
+	overflow-x: hidden;
+}
+h1{
+	font-size: 3.5rem;
+	color:var(--preto2);
+	font-family: 'Josefin Sans';
+}
+h2{
+	font-size: 3rem;
+	color:var(--preto2);
+	font-family: 'Josefin Sans';
+}
+h3{
+	font-size: 2.5rem;
+	color:var(--preto2);
+	font-family: 'Josefin Sans';
+}
+h4{
+	font-size: 1.35rem;
+	color:var(--preto2);
+	font-family: 'Lato';
+}
+h5{
+	font-size: 1rem;
+	color:var(--preto2);
+	font-family: 'Lato';
+}
+h6{
+	font-size: .94rem;
+	color:var(--preto2);
+	font-family: 'Lato';
+}
+p{
+	font-size: .94rem;
+	color:var(--preto2);
+	font-family: 'Lato';
+	line-height: 1.8rem;
+}
+span{
+	font-size: .8rem;
+	color:var(--rosa-bordo);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 500;
+}
+ul li{
+	font-size: 13px;
+	font-family: 'Lato';
+	font-weight: 600;
+	display: inline-block;
+	padding:0 1.5rem;
+	color:var(--preto2);
+}
+label{
+	font-size: 1.8rem;
+	font-family: 'Josefin Sans';
+}
+a{
+	text-decoration: none;
+	color:var(--preto2);
+	font-family: 'Lato';
+}
+img{
+	width: 100%;
+}
+svg{
+	vertical-align: middle;
+	width: 1.2rem;
+}
+input, input:focus{
+	outline: 0;
+	border:0;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]{
+	padding:1em 1em 1em 2em;
+	font-size: .8em;
+	border:1px solid #0000001a;
+	border-radius: 50px;
+	color:#999;
+
+}
+input[type=submit]{
+	box-shadow: 0 0 0 0px #efc9b4 inset;
+	padding:1.4em 2.6em;
+	background-color: var(--rosa-bordo);
+	border-radius: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:var(--preto);
+	border:1px solid var(--rosa-bordo);
+	transition: 500ms;
+}
+input[type=submit]:hover{
+	background-color: var(--branco);
+	color:var(--rosa-bordo);
+	border:1px solid var(--rosa-bordo);
+}
+button{
+	box-shadow: 0 0 0 0px #efc9b4 inset;
+	padding:1em 2em;
+	background-color: var(--rosa-bordo);
+	border-radius: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:var(--preto);
+	border:1px solid var(--rosa-bordo);
+	transition: 500ms;
+}
+section{
+	width: 100vw;
+	margin:0 auto;
+}
+div.ballet{
+	z-index: 100;
+	background-color:var(--branco);
+	position: fixed;
+	display: none;
+	width:100vw;
+	height: 100vh;
+	top:0;
+	transition: 500ms;
+	left:0;
+}
+div.ballet iframe{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+}
+header{
+	width:100vw;
+	padding:3%;
+	position: fixed;
+	transition: 500ms;
+	z-index: 100;
+}
+header div.head{
+	display: grid;
+	grid-template-columns: 40% 20% 40%;
+}
+header div.menu{
+	color:var(--preto2);
+	text-align: center;
+}
+header div.logo h2{
+	font-family:'Italianno';
+	line-height: 1rem;
+	text-align: center;
+	color:#525252;
+}
+
+/*Home*/
+section.banner{
+	width: 100vw;
+	height: 100vh;
+	background-image:url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Wave_White_bottom_left_shape_04.png');
+	background-repeat: no-repeat;
+	background-position:bottom;
+	background-size:contain;
+}
+section.banner div.banner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items:center;
+}
+div.banner div.banner-letreiro h3{
+	position: absolute;
+	font-size: 35rem;
+	font-family:'Italianno';
+	color:var(--rosa-bordo);
+	opacity: .4;
+	z-index: -1;
+	top:0;
+}
+div.banner div.banner-letreiro h2{
+	padding:5rem;
+	z-index: 1;
+}
+section.banner img{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	object-fit: cover;
+	z-index: -1;
+}
+section.banner h2{
+	font-family:'Josefin Sans';
+	font-weight: 200;
+	padding:5%;
+	font-size: 3.8rem;
+}
+section.sobre{
+	width: 100vw;
+	padding:5%;
+}
+section.sobre div.sobre{
+	display: grid;
+	grid-template-columns: 45% 45%;
+	grid-gap:10%;
+	align-items: center;
+	vertical-align: middle;
+	justify-content: center;
+}
+section.sobre div.depoimento{
+	background-image:url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/05/Circle.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:center;
+	padding:20%;
+}
+div.depoimento img{
+	width:30%;
+	border-radius:50%;
+	margin-bottom: 5%;
+}
+div.depoimento p{
+	font-size: 1.5rem;
+	font-style: italic;
+	margin-bottom:5%;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+div.sobre-box span,div.sobre-box h2,div.sobre-box p{
+	margin:4% 0;
+}
+section.cursos{
+	width: 100vw;
+	padding:10% 5%;
+	background-image: url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/05/Wave_White_top_left_shape_03.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+	background-color:var(--branco-gelo2);
+}
+section.cursos div.cursos{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap:3%;
+}
+section.cursos div.curso-single{
+	background-color:var(--branco);
+	box-shadow: 0 30px 30px -10px #00000033;
+}
+section.cursos div.curso-single img{
+	height: 30vh;
+	object-fit: cover;
+}
+section.cursos div.curso-single span{
+	width:15%;
+	display: inline-block;
+	border-right:1px solid var(--preto2);
+}
+section.cursos div.curso-single h6{
+	width:80%;
+	display: inline-block;
+	line-height: 3rem;
+}
+section.cursos div.curso-single p{
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+section.cursos div.curso-single div.conteudo-curso{
+	padding:5%;
+}
+section.cursos div.curso-single div.conteudo-curso p{
+	margin-bottom: 1em;
+}
+section.cursos div.curso-single div.conteudo-curso a, section.cursos div.curso-single div.conteudo-curso svg{
+	color:var(--rosa-bordo);
+}
+section.alunos{
+	background-image: url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/05/Wave_Grey_top_left_shape_02.png');
+	background-position: top;
+	background-size:contain;
+	background-repeat: no-repeat;
+	padding:5%;
+}
+section.alunos div.alunos{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-gap:5%;
+}
+div.alunos div.classe-single:nth-of-type(1){
+	margin-top: 12em;
+}
+div.alunos div.classe-single:nth-of-type(2){
+	margin-top: 9em;
+}
+div.alunos div.classe-single:nth-of-type(3){
+	margin-top: 6em;
+}
+div.alunos div.classe-single:nth-of-type(4){
+	margin-top: 3em;
+}
+div.alunos div.classe-single:nth-of-type(5){
+	margin-top: 0em;
+}
+div.alunos div.classe-single:nth-of-type(6){
+	margin-top: -3em;
+}
+div.alunos div.classe-single:nth-of-type(7){
+	margin-top: -6em;
+}
+div.alunos div.classe-single:nth-of-type(8){
+	margin-top: -9em;
+}
+section.informacoes-curso{
+	background-image:url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/05/Wave_White_top_left_shape_03.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:top;
+	padding:5%;
+	background-color: var(--branco-gelo2);
+}
+section.informacoes-curso-segundo{
+	padding:5%;
+	background-color: var(--branco-gelo2);
+	background-image:url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/04/Wave_White_bottom_right_shape_01.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:bottom;
+}
+section.informacoes-curso div.informacoes-curso, section.informacoes-curso-segundo div.informacoes-curso{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+div.marketing-info{
+	text-align: center;
+}
+div.marketing-info h2{
+	font-weight: 400;
+	font-size:2.5rem;
+}
+
+div.marketing-info h1{
+	font-size: 4.2rem;
+	font-weight: 500;
+}
+div.marketing-info ul{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin:10% 0;
+}
+div.marketing-info ul li:nth-of-type(2){
+	border-left:1px solid #bfbfbf;
+	border-right:1px solid #bfbfbf;
+}
+div.marketing-info a{
+	margin-top:10%;
+	box-shadow: 0 0 0 0px #efc9b4 inset;
+	padding:1.4em 2.6em;
+	background-color: var(--rosa-bordo);
+	border-radius: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:var(--preto);
+	border:1px solid var(--rosa-bordo);
+	transition: 500ms;
+}
+div.marketing-info svg{
+	display: block;
+	margin: 0 auto;
+	width:2rem;
+	margin-bottom:1em;
+}
+div.marketing-info span{
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+div.marketing-info p{
+	font-weight: 400;
+	font-size: .9rem;
+}
+section.planos{
+	padding:5%;
+}
+section.planos div.planos{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap:3%;
+}
+div.planos div.plano-single{
+	box-shadow: 0 15px 25px -15px #00000033;
+}
+div.plano-single div.imagem{
+	position:relative;
+}
+div.plano-single div.imagem label{
+	position:absolute;
+	left:0;
+	padding: 10%;
+	color:var(--branco);
+}
+table{
+	width: 100%;
+}
+div.plano-single div.imagem img{
+	height:30vh;
+	object-fit: cover;
+}
+
+div.plano-single div.info p{
+	padding:3%;
+	color:var(--preto2);
+	display: -webkit-box;
+	-webkit-line-clamp: 10;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-family:'Josefin Sans';
+}
+section.planos-pro{
+	width: 100vw;
+	height: 120vh;
+}
+div.planos-pro{
+	height: 100%;
+	padding:10%;
+	width:100%;
+	z-index: 1;
+	background-image: url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/05/background_dance_prices.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap:3%;
+}
+section.planos-pro img{
+	position: absolute;
+	object-fit: contain;
+}
+div.planos-pro div.pro-single{
+	text-align: center;
+	padding:20% 10%;
+	color:var(--branco);
+}
+div.planos-pro div.pro-single:nth-of-type(2){
+	border: 1px solid var(--branco);
+}
+div.pro-single span{
+	color:#efc9b4;
+	font-size: 1rem;
+	font-weight: 600;
+}
+div.pro-single h2{
+	font-size: 5rem;
+	margin:3% 0;
+	font-weight: 500;
+	color:var(--branco);
+}
+div.pro-single p{
+	color:var(--branco);
+	font-weight: 500;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+div.divisao{
+	display: block;
+	width:4em;
+	margin:5% auto;
+	height: 1px;
+	background-color:#efc9b4;
+}
+section.contato{
+	width: 100vw;
+	margin: 0 auto;
+	padding:0 10%;
+	background-image: linear-gradient(0deg, var(--branco-gelo2) 50%, transparent 50%);
+	z-index: 0;
+}
+section.contato div.contato{
+	display: grid;
+	background-color: var(--branco);
+	grid-template-columns: 30% 70%;
+	box-shadow: 0 10px 25px #0000001a;
+	padding:5%;
+	margin-top:-10%;
+	z-index: 10;
+}
+div.contato-form input{
+	position: relative;
+	margin:1%;
+}
+div.contato-form input[type=submit]{
+	color:var(--branco);
+	background-color: var(--rosa-bordo);
+	padding:.8rem 2rem;
+	width: 25%;
+}
+div.contato-texto h4{
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 3%;
+}
+footer{
+	width: 100vw;
+	padding:5%;
+	background-image: url('http://tabula.bold-themes.com/wavy/wp-content/uploads/sites/3/2019/05/footer_background_dance.jpg');
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+footer div.footer{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-gap:5%;
+}
+footer div.footer h6{
+	font-size: 1.55rem;
+	font-weight: 400;
+	margin-bottom: .4rem;
+}
+footer div.footer ul li{
+	padding:.5rem 0;
+	display: block;
+	font-size: .9rem;
+	font-weight: 400;
+	border-bottom:1px solid #0000001a;
+}
+footer div.footer svg{
+	color:var(--rosa-bordo);
+	width: 1rem;
+}
+footer div.footer input{
+	width: 100%;
+	margin-bottom: .4rem;
+}
+footer div.footer .social{
+	color:var(--preto2);
+	margin-top: .4rem;
+	margin-right: .4rem;
+	fill:var(--preto2);
+	stroke:var(--rosa-bordo);
+	width: .9rem;
+}
+
+/*ANIMAÇÕES*/
+div.menu ul li:hover{
+	color:var(--rosa-bordo);
+}
+
+/*CARRINHO*/
+section.carrinho{
+	width:100vw;
+	padding:5%;
+}
+section.carrinho table tr{
+	display: grid;
+	grid-template-columns: 50% 25% 25%;
+}
+section.carrinho table tr:nth-of-type(1){
+	font-size: 16px;
+	font-weight: 400;
+	color:var(--cinza);
+}
+section.carrinho table tr td:nth-of-type(1){
+	justify-content: flex-start;
+	width: 15%;
+}
+section.carrinho tr{
+	border-bottom: 1px solid var(--borda);
+}
+section.carrinho table tr td{
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	border:0;
+}
+section.total-produtos div.total-produtos{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	padding:0 5%;
+	margin-bottom: 3%;
+}
+section.total-produtos h4{
+	font-weight: 600;
+	font-size: 18px;
+	color:var(--preto);
+}
+section.total-produtos span{
+	float: right;
+	font-weight: 600;
+	font-size: 18px;
+	color:var(--preto);
+}
+section.total-produtos a{
+	width: 100%;
+	display: block;
+	background-color: var(--rosa-bordo);
+	color:var(--branco);
+	padding:18px;
+	text-align: center;
+	margin-top:8%;
+}
+div.calcular-frete{
+	width:80%;
+}
+div.calcular-frete form{
+	display:grid;
+	grid-template-columns: 60% 30%;
+	grid-gap:5%;
+	margin-top: 5%;
+}
+div.calcular-frete input{
+	padding:4%;
+}
+div.calcular-frete input[type=submit]{
+	background-color: var(--branco);
+	border: 1px solid var(--preto2);
+	color:var(--preto2);
+}
+/*Finalizar*/
+section.head-finalizar{
+	padding:10%;
+	text-align: center;
+	font-size: 30px;
+}
+section.finalizar-pedido{
+	width:100vw;
+	padding:0 5%;
+}
+section.finalizar-pedido div.finalizar-pedido{
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-gap:2%;
+}
+div.finalizar-pedido div.formulario-pedido h2, div.finalizar-pedido div.produtos-pedido h2{
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+div.formulario-pedido form input{
+	width: 45%;
+	display: inline-block;
+	margin: 2% 1%;
+}
+div.formulario-pedido form input:nth-of-type(3), div.formulario-pedido form input:nth-of-type(9), div.formulario-pedido form input:nth-of-type(6){
+	width: 93%;
+}
+
+div.formulario-pedido form input{
+	padding:18px;
+}
+table{
+	width: 100%;
+}
+table tr td{
+	padding:3% 0;
+	border-bottom:1px solid var(--borda);
+	font-size: 14px;
+	font-weight: 400;
+	color:var(--preto-fraco);
+}
+table tr:nth-of-type(1){
+	color:var(--preto);
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+div.produtos-pedido h4{
+	margin:3% 0;
+	font-size: 16px;
+	color:var(--preto);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+div.produtos-pedido h4 span{
+	float:right;
+	font-size: 16px;
+	font-weight: 400;
+	color:var(--preto);
+}
+div.produtos-pedido{
+	padding:3%;
+	border: 1px solid var(--borda);
+}
+div.produtos-pedido a{
+	width: 100%;
+	display: block;
+	background-color: var(--rosa-bordo);
+	color:var(--branco);
+	padding:18px;
+	text-align: center;
+}
+
+/*LOGIN*/
+
+canvas {
+	display: block;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+#particles-js {
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.count-particles{
+background: var(--rosa-bordo);
+position: absolute;
+top: 48px;
+left: 0;
+width: 80px;
+color: #13E8E9;
+font-size: .8em;
+text-align: left;
+text-indent: 4px;
+line-height: 14px;
+padding-bottom: 2px;
+font-family: Helvetica, Arial, sans-serif;
+font-weight: bold;
+}
+.js-count-particles{
+font-size: 1.1em;
+}
+#stats,
+.count-particles{
+-webkit-user-select: none;
+}
+#stats{
+border-radius: 3px 3px 0 0;
+overflow: hidden;
+}
+.count-particles{
+border-radius: 0 0 3px 3px;
+}
+section.login{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+section.login div.form-login{
+	background-color: var(--branco);
+	padding:8% 3%;
+	width:40%;
+	box-shadow: 0px 0px 62px 0px #00000012;
+	margin: 0 auto;
+	z-index: 1;
+}
+div.form-login h2{
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 900;
+}
+div.form-login h6{
+	color:#999898;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+div.form-login input{
+	width: 100%;
+	margin-top: 3%;
+}
+div.form-login label{
+	color:#a4a4a4;
+	font-size: .9rem;
+}
+div.form-login input[type=submit]{
+	margin-bottom: 2rem;
+}
+div.form-login input[type=checkbox]{
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+	margin:1%;
+	width: .5rem;
+	border-radius: 0;
+	color:#a4a4a4;
+}
+
+/*AREA ALUNO*/
+button.acordeao {
+	cursor: pointer;
+	width: 100%;
+	transition: 0.4s;
+	text-align: left;
+}
+.conteudo.show {
+	display: block;
+}
+.conteudo {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.6s ease-in-out;
+	opacity: 0;
+}
+.conteudo.show {
+	opacity: 1;
+	max-height: 500px;
+}
+section.area-aluno{
+	width:100vw;
+	background-color: #f5f4f8;
+}
+section.area-aluno div.area-aluno-head{
+	background-color: var(--rosa-bordo);
+	width: 100vw;
+	padding:10%;
+	padding-right: 30%;
+}
+div.area-aluno-head h2{
+	color:var(--branco);
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+div.area-aluno-head p{
+	color:var(--branco);
+	font-size: 1.25rem;
+    font-weight: 400;
+	margin-bottom: 3%;
+}
+div.area-aluno-head ul li{
+	color:var(--branco);
+	font-size: 1rem;
+	font-weight: 400;
+	padding:0;
+	padding-right: 3%;
+}
+section.area-aluno div.area-aluno-head svg{
+	color:var(--branco);
+	font-size: .8rem;
+}
+section.area-aluno div.area-curso{
+	width:80vw;
+	margin:0 auto;
+	margin-top:-6%;
+	display: grid;
+	grid-template-columns: 65% 30%;
+	grid-gap:5%;
+}
+div.area-curso div.aulas-container{
+	background-color: var(--branco);
+	border-radius: 1em;
+	box-shadow: 1px 3px #03004717;
+}
+div.area-curso div.aulas-container div.aulas-box div.links-tab{
+	border-bottom:1px solid #ecebf1;
+	padding:3%;
+}
+div.area-curso div.aulas-container div.aulas-box div.conteudo-tab li button{
+	font-size: 1rem;
+	color:var(--preto);
+	font-weight: 600;
+	font-family: 'Josefin Sans';
+	padding:0;
+	background-color: unset;
+	border:unset;
+	text-transform: unset;
+}
+div.conteudo-tab ul li{
+	padding:0;
+	display: block;
+	border-bottom:1px solid #ecebf1;
+	padding:1% 0;
+	margin:2% 3%;
+}
+div.conteudo-tab div.conteudo ul li svg{
+	color:var(--branco);
+	fill:var(--rosa-bordo);
+	width:1rem;
+	margin-right:.5rem;
+}
+div.conteudo-tab div.conteudo ul li{
+	line-height: 1rem;
+	font-size: .9rem;
+	font-weight: 500;
+	color:var(--preto2);
+}
+div.conteudo-tab div.conteudo ul{
+	margin-top:3%;
+}
+button.active{
+	color:var(--rosa-bordo) !important;
+}
+div.aula-atual-container div.aula-box{
+	background-color: var(--branco);
+	border-radius: 10px;
+	box-shadow: 0 1px 3px #03004717;
+	padding:5%;
+	margin-top: -20%;
+}
+div.aula-atual-container input[type=submit]{
+	width:100%;
+	border-radius: 10px;
+	padding:1em;
+	margin-top:.5rem;
+	color:var(--branco);
+}
+div.aula-atual-container input[type=submit]:nth-of-type(2){
+	background-color: var(--branco);
+	color:var(--rosa-bordo);
+}
+div.aula-atual-container h6{
+	font-size: 1rem;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	color:var(--preto2);
+}
+div.aula-atual-container iframe{
+	border:0;
+	border-radius: 10px;
+	background-color: var(--branco-gelo);
+	max-width: 100%;
+}
+div.inclusos-box, div.info-aluno{
+	background-color: var(--branco);
+	box-shadow: 0 1px 3px #03004717;
+	border-radius: 10px;
+	padding:5%;
+	margin-top:5%;
+}
+div.inclusos-box h6{
+	border-bottom:1px solid #ecebf1;
+	padding:3% 0;
+	font-weight: 600;
+	color:var(--preto2);
+}
+div.inclusos-box ul li{
+	display: block;
+	padding:1% 0;
+	border-bottom: 1px solid #ecebf1;
+}
+div.inclusos-box ul li svg{
+	width:.9rem;
+	margin-right:3%;
+}
+div.inclusos-box ul li:nth-of-type(1) svg{color:#754ffe}
+div.inclusos-box ul li:nth-of-type(2) svg{color:#19cb98}
+div.inclusos-box ul li:nth-of-type(3) svg{color:#ffaa46}
+div.inclusos-box ul li:nth-of-type(4) svg{color:#3595f6}
+div.inclusos-box ul li:nth-of-type(5) svg{color:#18113c}
+div.info-aluno img{
+	width:30%;
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 3%;
+}
+div.info-aluno h6{
+	width: 65%;
+	display: inline-block;
+	vertical-align:top;
+	padding-left:5%;
+}
+div.info-aluno h6 p, div.info-aluno h6 label{
+	font-size: .75rem;
+	color:#9592a8;
+}
+div.info-aluno ul{
+	border-bottom:1px solid #ecebf1;
+	border-top:1px solid #ecebf1;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
+	align-items: center;
+}
+div.info-aluno li:nth-of-type(2){
+	border-left:1px solid #ecebf1;
+	border-right: 1px solid #ecebf1;
+	padding:3%;
+}
+div.info-aluno li span{
+	color:#9592a8;
+	font-size: .9rem;
+	letter-spacing: 0;
+	text-transform: unset;
+}
+div.info-aluno p{
+	color:#9592a8;
+	font-size: .9rem;
+	padding:3%;
+}
+
+
+
+@media screen and (max-width: 780px){
+	body{
+		width:100vw;
+	}
+	div.banner div.banner-letreiro h2 {
+		padding: 3rem;
+	}
+	div.banner div.banner-letreiro h3 {
+		font-size: 15rem;
+	}
+	section.sobre div.sobre {
+		display: block;
+	}
+	section.cursos div.cursos {
+		display: block;
+	}
+	section.cursos div.curso-single{
+		margin-top: 3%;
+	}
+	div.informacoes-curso, section.informacoes-curso-segundo div.informacoes-curso {
+		display: block;
+	}
+	div.marketing-info{
+		margin:3em 0;
+	}
+	section.informacoes-curso div.informacoes-curso, section.informacoes-curso-segundo div.informacoes-curso{
+		display: block;
+	}
+	section.planos div.planos{
+		display: block;
+	}
+	div.planos div.plano-single, div.planos-pro div.pro-single{
+		margin-top:3em;
+	}
+	div.planos-pro{
+		display: block;
+	}
+	section.contato div.contato{
+		display: block;
+	}
+	footer div.footer {
+		grid-template-columns:47% 47%;
+		grid-gap:3%;
+	}
+	input{
+		width: 100% !important;
+	}
+	section.planos-pro{
+		height: 100%;
+	}
+	section.contato {
+		background-image: linear-gradient(
+	0deg, var(--branco-gelo2) 90%, transparent 20%);
+	}
+	section.banner h2{
+		font-size: 2rem;
+	}
+	header{
+		position: relative;
+		padding:1em;
+	}
+	header div.head {
+		display: block;
+	}
+	header div.menu{
+		display: none;
+	}
+	section.area-aluno div.area-aluno-head{
+		padding:5%;
+		padding-bottom:20%;
+	}
+	section.area-aluno div.area-curso{
+		display: block;
+		width: 90vw;
+	}
+	div.aula-atual-container{
+		order:1;
+	}
+	div.aulas-box{
+		order:2;
+	}
+	div.aula-atual-container div.aula-box{
+		background-color: var(--branco);
+		margin-top: 5%;
+	}
+	footer div.footer ul li{
+		font-size: .75rem;
+		font-weight: 500;
+	}
+	footer div.footer svg{
+		font-size: .75rem;
+	}
+	footer div.footer h6 {
+		font-size: 1.2rem;
+	}
+}
