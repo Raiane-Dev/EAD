@@ -13,7 +13,7 @@ assim, a experiência do usuário muito melhor.</p>
 
 <li>
   <strong>Database: </br /></strong>
-  <i>PHPMyAdmin.</i>
+  <i>MySql.</i>
 </li>
 
 <li>
